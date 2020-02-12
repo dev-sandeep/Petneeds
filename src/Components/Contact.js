@@ -21,8 +21,7 @@ function Contact() {
               <div className="col-lg-4 mr-auto text-center">
                 <i className="fas fa-envelope fa-3x mb-3 text-muted"></i>
                 <br/>
-                Make sure to change the email address in anchor text AND the link below!
-          <a className="d-block" href="mailto:contact@yourwebsite.com">contact@yourwebsite.com</a>
+                <a className="d-block" href="mailto:contact@yourwebsite.com">contact@yourwebsite.com</a>
               </div>
             </div>
           </div>
