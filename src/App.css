@@ -44,3 +44,23 @@
     transform: rotate(360deg);
   }
 }
+
+#nav .fixed-top{
+  position: initial;
+}
+
+#nav .navbar{
+  background: gray;
+}
+
+.left-align{
+  text-align: left;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+.margin-5{
+  margin: 5px;
+}

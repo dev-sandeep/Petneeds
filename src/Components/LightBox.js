@@ -1,8 +1,17 @@
 import React, { useState } from 'react';
 import Modal from 'react-bootstrap/Modal'
 import Button from 'react-bootstrap/Button'
+import StepZilla from 'react-stepzilla'
+import Step1 from './BuyComponents/Step1'
+import Step2 from './BuyComponents/Step2'
 function LightBox(props) {
     const [show, setShow] = useState(false);
+
+    const steps = [
+        {name: 'Buy 1', component: <Step1 />},
+        {name: 'Buy 2', component: <Step2 />},
+    ]
+
     return (
         <div className="light-box-section" id="sell">
             <div className={props.classNameArr} variant="primary" onClick={() => setShow(true)}>
@@ -20,15 +29,7 @@ function LightBox(props) {
                     </Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <p>
-                        Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae unde
-                        commodi aspernatur enim, consectetur. Cumque deleniti temporibus
-                        ipsam atque a dolores quisquam quisquam adipisci possimus
-                        laboriosam. Quibusdam facilis doloribus debitis! Sit quasi quod
-                        accusamus eos quod. Ab quos consequuntur eaque quo rem! Mollitia
-                        reiciendis porro quo magni incidunt dolore amet atque facilis ipsum
-                        deleniti rem!
-                    </p>
+                   <StepZilla showNavigation={true} steps={steps} />
                 </Modal.Body>
             </Modal>
         </div>
