@@ -4,6 +4,7 @@ import './App.css';
 
 import HomePage from './Pages/Home'
 import BuyPage from './Pages/BuyIndividual'
+import BuyDetailPage from './Pages/BuyIndividualDetail'
 import SellPage from './Pages/Sell'
 import {
   BrowserRouter as Router,
@@ -18,6 +19,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route exact path="/buy" component={BuyPage} />
+          <Route exact path="/buy/:id" component={BuyDetailPage} />
           <Route exact path="/sell" component={SellPage} />
         </Switch>
       </Router>

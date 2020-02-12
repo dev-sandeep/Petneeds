@@ -94,3 +94,15 @@
   font-weight: 100;
   font-family: sans-serif; 
 }
+
+.lower-case{
+  text-transform: lowercase
+}
+
+.show{
+  display: initial;
+}
+
+.hide{
+  display: none;
+}
