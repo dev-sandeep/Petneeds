@@ -4,7 +4,16 @@ import Jumbotron from 'react-bootstrap/Jumbotron'
 import Breeds from '../Utility/Breeds'
 function BuyDetailPage(props) {
     const urlParam = props.match.params.id;
-
+    const detail = {
+        name: 'Loreum Ipsum',
+        age: 7,
+        gender: 'Male',
+        Height: '120cm',
+        Weight: '12Kg',
+        Breed: urlParam,
+        Location: 'Bangalore',
+        Price: '12,000 INR'
+    }
     return (
         <div className='buy-individual-detail' id='detail-buy'>
             <Nav />
@@ -21,8 +30,25 @@ function BuyDetailPage(props) {
 
                             <div className="col-lg-12 left-align">
                                 <div className="row">
-                                    
-
+                                    <div className="col-lg-6 col-ms-8 col-sm-12 col-xs-12">
+                                        {/* image goes here */}
+                                        <div className="image-section">
+                                            <img className="width-100" src={'https://source.unsplash.com/650x650/?'+urlParam} />
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-6 col-ms-8 col-sm-12 col-xs-12">
+                                        {/* details goes here */}
+                                        <div className="content">
+                                            {Object.keys(detail).map((key)=>(
+                                                 <div className="individual-row">
+                                                 <span className="title">{key}: </span> <b>{detail[key]}</b>
+                                             </div>
+                                            ))}
+                                        </div>
+                                    </div>
+                                    <div className='col-lg-12 contact-btn'>
+                                        <button className="btn btn-primary btn-lg">Contact</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>

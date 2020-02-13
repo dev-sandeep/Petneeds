@@ -92,17 +92,38 @@
 
 .content .sub-title {
   font-weight: 100;
-  font-family: sans-serif; 
+  font-family: sans-serif;
 }
 
-.lower-case{
+.lower-case {
   text-transform: lowercase
 }
 
-.show{
+.show {
   display: initial;
 }
 
-.hide{
+.hide {
   display: none;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.individual-row {
+  background: #fff;
+  padding: 5px;
+  margin: 10px;
+  text-transform: capitalize;
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+.float-right{
+  float: right;
+}
+
+#detail-buy .contact-btn{
+  text-align: right;
 }
