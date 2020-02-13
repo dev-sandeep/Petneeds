@@ -3,9 +3,9 @@ import React from 'react';
 function Nav() {
     return (
         <div className="nav-section" id="nav">
-            <nav className="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            <nav className="navbar navbar-expand-lg navbar-light top-style py-3" id="mainNav">
                 <div className="container">
-                    <a className="navbar-brand js-scroll-trigger" href="#page-top">PetNeeds</a>
+                    <a className="navbar-brand js-scroll-trigger" href="/">PetNeeds</a>
                     <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -25,12 +25,12 @@ function Nav() {
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Buy</a>
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item pointer">Individual</a>
+                                    <a class="dropdown-item pointer" href="/buy">Individual</a>
                                     <a class="dropdown-item pointer">Shops</a>
                                 </div>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link js-scroll-trigger" href="#sell">Sell</a>
+                                <a className="nav-link js-scroll-trigger" href="/sell">Sell</a>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link js-scroll-trigger" href="#contact">Contact</a>

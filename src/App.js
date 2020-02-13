@@ -6,6 +6,7 @@ import HomePage from './Pages/Home'
 import BuyPage from './Pages/BuyIndividual'
 import BuyDetailPage from './Pages/BuyIndividualDetail'
 import SellPage from './Pages/Sell'
+import Nav from './Components/Nav';
 import {
   BrowserRouter as Router,
   Route,
@@ -15,6 +16,7 @@ import {
 function App() {
   return (
     <div className="App">
+       <Nav />
       <Router>
         <Switch>
           <Route exact path="/" component={HomePage} />

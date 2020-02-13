@@ -64,7 +64,7 @@ function BuyPage() {
 
     return (
         <div className="buy-section-individual" id="buy">
-            <Nav />
+            {/* <Nav /> */}
             <div className="container">
                 <div className="col-lg-12">
                     <Jumbotron>

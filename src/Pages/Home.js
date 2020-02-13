@@ -11,7 +11,6 @@ import Nav from '../Components/Nav'
 function HomePage() {
     return (
         <div className="home-section" id="home">
-            <Nav />
             <Header />
             <About />
             <Services />

@@ -126,4 +126,43 @@
 
 #detail-buy .contact-btn{
   text-align: right;
+    padding-right: 2.4%;
+}
+
+@media(max-width:576px){
+  .tablet-mobile-m-top-6{
+    /* margin-top: 6%; */
+  }
+}
+
+
+.home-section .top-style{
+  /* position: fixed; */
+}
+
+.image-section{
+  margin-top: 7%;
+}
+
+.form-content{
+  /* width: 60%; */
+  text-align: center;
+  /* margin: 4% auto; */
+}
+
+.form-content form{
+  margin: 0 auto;
+  text-align: left;
+}
+
+.form-content input{
+  width: 400px;
+}
+
+.pull-right{
+  float: right;
+}
+
+.pull-left{
+  float: left;
 }
