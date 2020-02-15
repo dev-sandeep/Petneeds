@@ -7,6 +7,8 @@ import BuyPage from './Pages/BuyIndividual'
 import BuyDetailPage from './Pages/BuyIndividualDetail'
 import SellPage from './Pages/Sell'
 import Nav from './Components/Nav';
+import Partner from './Pages/Partner'
+import PartnerResult from './Pages/PartnerResult'
 import {
   BrowserRouter as Router,
   Route,
@@ -16,13 +18,16 @@ import {
 function App() {
   return (
     <div className="App">
-       <Nav />
+     
       <Router>
+      <Nav />
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route exact path="/buy" component={BuyPage} />
           <Route exact path="/buy/:id" component={BuyDetailPage} />
           <Route exact path="/sell" component={SellPage} />
+          <Route path="/partner" component={Partner} />
+          <Route exact path="/partner-result" component={PartnerResult} />
         </Switch>
       </Router>
     </div>

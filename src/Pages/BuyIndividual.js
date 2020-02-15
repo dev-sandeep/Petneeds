@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Nav from '../Components/Nav';
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import Breeds from '../Utility/Breeds'
+import PetLoop from '../Components/PetLoop'
 import {
     BrowserRouter as Router,
     Switch,
@@ -43,24 +44,18 @@ function BuyPage() {
     }
 
     let data = getAnimalData();
-    const defaultClass = 'col-lg-4 col-sm-6 m-bottom-2p pointer';
-    const loopAnimalTypes = animalsType.map((item, key) => (
-        <div className={defaultClass + (type == 0 ? ' show' : ' hide')} onClick={() => { setAnimal(key); setType(1) }}>
-            <img className="img-fluid" src={'https://source.unsplash.com/650x350/?' + item} alt="" />
-            <div className="portfolio-box-caption list-desc">
-                {item}
-            </div>
-        </div>
-    ));
+    // const defaultClass = 'col-lg-4 col-sm-6 m-bottom-2p pointer';
+    const loopAnimalTypes =
+        <PetLoop
+            data={animalsType}
+            show={type == 0}
+            onClick={(item, key) => { setAnimal(key); setType(1) }} />
 
-    const loopAnimals = data.map((item, key) => (
-        <div className={defaultClass + (type == 1 ? ' show' : ' hide')} onClick={() => { history.push('/buy/'+item); }}>
-            <img className="img-fluid" src={'https://source.unsplash.com/650x350/?' + item} alt="" />
-            <div className="portfolio-box-caption list-desc">
-                {item}
-            </div>
-        </div>
-    ));
+    const loopAnimals =
+        <PetLoop
+            data={data}
+            show={type == 1}
+            onClick={(item) => { history.push('/buy/' + item); }} />
 
     return (
         <div className="buy-section-individual" id="buy">
@@ -77,14 +72,8 @@ function BuyPage() {
                             </div>
 
                             <div className="col-lg-12 left-align">
-                                <div className="row">
-                                    {/* <div className={animalsType == 0?'show':'hide'} className='animal-type-loop'> */}
-                                    {loopAnimalTypes}
-                                    {/* </div> */}
-                                    {/* <div className='animal-loop' className={animalsType == 1?'show':'hide'}> */}
-                                    {loopAnimals}
-                                    {/* </div> */}
-                                </div>
+                                {loopAnimalTypes}
+                                {loopAnimals}
                             </div>
                         </div>
                     </Jumbotron>

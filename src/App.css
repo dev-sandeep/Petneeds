@@ -166,3 +166,11 @@
 .pull-left{
   float: left;
 }
+
+.m-top-bottom-50{
+  margin: 50px 0 50px 0;
+}
+
+.m-top-30{
+  margin-top: 30px;
+}

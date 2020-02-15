@@ -32,6 +32,7 @@ function Sell() {
                             nextButtonCls="btn btn-next btn-primary btn-lg pull-right"
                             backButtonCls="btn btn-prev btn-primary btn-lg pull-left"
                             showNavigation={true} 
+                            prevBtnOnLastStep={false}
                             steps={steps} />
                         </div>
                     </Jumbotron>
