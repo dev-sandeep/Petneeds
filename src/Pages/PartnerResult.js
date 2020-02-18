@@ -1,7 +1,13 @@
 import React, { useState } from 'react';
-import Form from 'react-bootstrap/Form'
 import Jumbotron from 'react-bootstrap/Jumbotron'
+import Breeds from '../Utility/Breeds'
+import PetLoop from '../Components/PetLoop'
 function PartnerResult() {
+    const loopAnimals =
+        <PetLoop
+            data={Breeds().dogs}
+            show={true}
+            onClick={(item) => { history.push('/buy/' + item); }} />
 
     return (
         <div className="partner-section" id="partner">
@@ -17,7 +23,7 @@ function PartnerResult() {
                             </div>
 
                             <div className="col-lg-12 left-align">
-                                
+                                {loopAnimals}
                             </div>
                             {/* </div> */}
                         </div>

@@ -174,3 +174,24 @@
 .m-top-30{
   margin-top: 30px;
 }
+
+.bg-white{
+  background: #fff;
+}
+
+.pad-10{
+  padding: 10px;
+}
+
+.bold-700{
+  font-weight: 700;
+}
+
+.text-left{
+  text-align: left;
+}
+
+.text-weight-100{
+  font-weight: 100;
+  font-family: inherit;
+}

@@ -9,6 +9,8 @@ import SellPage from './Pages/Sell'
 import Nav from './Components/Nav';
 import Partner from './Pages/Partner'
 import PartnerResult from './Pages/PartnerResult'
+import Profile from './Pages/User/Profile'
+import PostAd from './Pages/Advt/Post'
 import {
   BrowserRouter as Router,
   Route,
@@ -18,9 +20,9 @@ import {
 function App() {
   return (
     <div className="App">
-     
+
       <Router>
-      <Nav />
+        <Nav />
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route exact path="/buy" component={BuyPage} />
@@ -28,6 +30,8 @@ function App() {
           <Route exact path="/sell" component={SellPage} />
           <Route path="/partner" component={Partner} />
           <Route exact path="/partner-result" component={PartnerResult} />
+          <Route exact path="/profile" component={Profile} />
+          <Route exact path="/post-ad" component={PostAd} />
         </Switch>
       </Router>
     </div>

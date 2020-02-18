@@ -17,16 +17,6 @@ function BuyPage() {
     const history = useHistory();
 
     const num = Breeds().dogs;
-    const loop = num.map((item) => (
-        <div className="col-lg-4 col-sm-6 m-bottom-2p pointer">
-
-            <img className="img-fluid" src={'https://source.unsplash.com/650x350/?' + item} alt="" />
-            <div className="portfolio-box-caption list-desc">
-                {item}
-            </div>
-
-        </div>
-    ));
 
     const animalsType = ['Dog', 'Cat', 'Fish'];
 
