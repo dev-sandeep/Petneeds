@@ -7,7 +7,7 @@ function PartnerResult() {
         <PetLoop
             data={Breeds().dogs}
             show={true}
-            onClick={(item) => { history.push('/buy/' + item); }} />
+            onClick={(item) => {  }} />
 
     return (
         <div className="partner-section" id="partner">
